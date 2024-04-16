@@ -7,16 +7,14 @@
     box-sizing: border-box;
     font-family: 'Popins', serif;
 }
-body
-{
+body {
     background: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 10vh;
 }
-.container
-{
+.container {
     position: relative;
     width: 100%;
     max-width: 1000px;
@@ -24,17 +22,15 @@ body
     margin: 0px;
     background: #fff;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.9fr 2fr;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
 }
-.container .left_side
-{
+.container .left_side {
     position: relative;
     background: #003147;
     padding: 25px;
 }
-.profileText
-{
+.profileText {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -42,16 +38,14 @@ body
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
-.profileText .imgBx
-{
+.profileText .imgBx {
     position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
 }
-.profileText .imgBx img
-{
+.profileText .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,8 +53,7 @@ body
     height: 100%;
     object-fit: cover;
 }
-.profileText h2
-{
+.profileText h2 {
     color: #fff;
     font-size: 1.5em;               /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     margin-top: 0px;
@@ -68,112 +61,99 @@ body
     font-weight: 600;
     line-height: 1.4em;
 }
-.profileText h2 span
-{
+.profileText h2 span {
     font-size: 0.8em;
     font-weight: 300;
 }
-.contactInfo
-{
+.contactInfo {
     padding-top: 40px;
 }
-.title
-{
+.title {
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-.contactInfo ul
-{
+.contactInfo ul {
     position: relative;
 }
-.contactInfo ul li
-{
+.contactInfo ul li {
     position: relative;
     list-style: none;
     margin: 10px 0;
     cursor: pointer;
 }
-.contactInfo ul li .icon
-{
+.contactInfo ul li .icon {
     display: inline-block;
     width: 20px;
     font-size: 18px;
     color: #03a9f4;
 }
-.contactInfo ul li span
-{
+.contactInfo ul li span {
     color: #fff;
     font-weight: 300;
 }
-.contactInfo ul li span a
-{
+.contactInfo ul li span a {
     color: #fff;
     font-weight: 300;
 }
-.contactInfo.education li
-{
+.contactInfo.education li {
     margin-bottom: 15px;
 }
-.contactInfo.education h4:nth-child(2)
-{
+.contactInfo.education h4:nth-child(2) {
     color: #fff;
     font-weight: 300;
 }
-.contactInfo.education h4
-{
+.contactInfo.education h4 {
     color: #fff;
     font-weight: 600;
 }
-.contactInfo.education h5
-{
+.contactInfo.education h5 {
     color: #03a9f4;
     font-weight: 500;
 }
-.container .right_side
-{
+.container .right_side {
     position: relative;
     background: #fff;
-    padding: 40px;
+    padding: 25px;
 }
-.about
-{
-    margin-bottom: 50px;
+.about {
+    margin-bottom: 15px;
 }
-.about:last-child
-{
+.about:last-child {
     margin-bottom: 0;
 }
-.title2
-{
+.title2 {
     color: #003147;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
-p
-{
+p {
     color: #333;
+    margin-bottom: 5px;
 }
-.box
-{
+.p:last-child {
+    padding: 0;
+}
+.box {
     display: flex;
     flex-direction: row;
-    margin: 20px 0;
 }
 .box .year_company
 {
-    min-width: 130px;
+    min-width: 135px;
+    padding: 5px;
 }
-.box .year_company h5
-{
+.box .year_company h5 {
     color: #848c90;
     font-weight: 600;
 }
-.box .text h4
-{
+.box .text {
+    padding: 5px;
+}
+.box .text h4 {
     color: #2a7da2;
     font-size: 16px;
 }
@@ -181,8 +161,7 @@ p
     margin: 40px auto 0;
     width: 70%;
 }
-.button
-{
+.button {
     background-color: #03a9f4;
     border: none;
     color: white;
@@ -198,11 +177,10 @@ p
 {
     display: grid;
 }
-.skills ul li
-{
+.skills ul li {
     list-style: none;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     display: grid;
     grid-template-columns: 0.5fr 2fr;
     column-gap: 15px;
@@ -210,23 +188,35 @@ p
 .skills ul li:last-child {
     margin-bottom: 0;
 }
-.skills ul li .fa
-{
+.skills ul li .fa {
     color: #03a9f4;
     font-size: 18px;
     width: 20px;
 }
 .skill {
     min-width: 112px;
+    padding: 5px;
 }
 .skill h4 {
     color: #2a7da2;
     font-size: 16px;
     text-transform: uppercase;
 }
-
-@media (max-width: 600px)
-{
+.description {
+    padding: 5px;
+}
+.description p {
+    margin-bottom: 0;
+}
+@media (max-width:992px){
+    .button {
+        padding: 15px 20px;
+    }
+}
+@media (max-width: 767px) {
+    html {
+        font-size: 20px;
+    }
     .container
     {
         grid-template-columns: 1.21fr;
@@ -243,5 +233,8 @@ p
     .skills ul li {
         display: flex;
         flex-direction: column;
+    }
+    .btn {
+        width: 50%;
     }
 }
