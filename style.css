@@ -113,6 +113,11 @@ body {
     color: #03a9f4;
     font-weight: 500;
 }
+.contactInfo.profile p {
+    color: #fff;
+    font-weight: 300;
+}
+
 .container .right_side {
     position: relative;
     background: #fff;
